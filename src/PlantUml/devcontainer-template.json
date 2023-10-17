@@ -1,0 +1,31 @@
+{
+    "id": "plantuml",
+    "version": "1.0.0",
+    "name": "Plantuml DevContainer",
+    "description": "A Template to allow you to preview and generate diagrams using PlantUML",
+    "documentationURL": "https://github.com/lnyousif/plantuml-devcontainer/tree/main/src/color",
+    "licenseURL": "https://github.com/lnyousif/plantuml-devcontainer/blob/main/LICENSE",
+    "options": {
+        "exportFormat": {
+            "type": "string",
+            "description": "Choose your exportFormat.",
+            "proposals": [
+                "png", "svg", "eps", "pdf", "vdx", "xmi", "scxml", "html", "txt", "utxt", "latex", "latex:nopreamble"
+            ],
+            "default": "png"
+        },
+        "diagramsSource": {
+            "type": "string",
+            "description": "Choose your diagrams source folder",
+            "default": "diagrams/src"
+        },
+        "diagramsOutDir": {
+            "type": "string",
+            "description": "Choose your renderd diagrams output folder",
+            "default": "diagrams/out"
+        }
+    },
+    "platforms": [
+        "Any"
+    ]
+}
